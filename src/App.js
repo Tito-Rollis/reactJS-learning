@@ -32,7 +32,10 @@ class App extends Component {
 			<div className="App">
 				<h1>Hello World</h1>
 				<Person name="Tito" age="27" />
-				<Person name="Wella" age="26" />
+				<Person name="Wella" age="26">
+					<h1>this is props.children inside element</h1>
+					this.props.children without element
+				</Person>
 			</div>
 		);
 	}
