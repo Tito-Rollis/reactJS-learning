@@ -51,6 +51,16 @@ import {render} from "@testing-library/react";
 
 // Using State Hook within Class component
 class App extends React.Component {
+	// constructor(props) {
+	// 	super(props);
+	// 	this.state = {
+	// 		persons: [
+	// 			{name: "Max", age: 28},
+	// 			{name: "Manu", age: 29},
+	// 			{name: "Stephanie", age: 26},
+	// 		],
+	// 	};
+	// }
 	state = {
 		persons: [
 			{name: "Max", age: 28},
@@ -59,7 +69,7 @@ class App extends React.Component {
 		],
 	};
 
-	switchNameHandler = () => {
+	switchNameHandler() {
 		this.setState({
 			persons: [
 				{name: "Tito Rollis", age: 27},
@@ -67,9 +77,9 @@ class App extends React.Component {
 				{name: "Stephanie", age: 26},
 			],
 		});
-	};
+	}
 
-	render() { 
+	render() {
 		return (
 			<div className="App">
 				<h1>Hi, I'm a React App</h1>
